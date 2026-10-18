@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Service Centre Amjhar Sharif | Digital Seva Portal</title>
+
+    <!-- Professional SEO / Social Sharing -->
+    <meta name="theme-color" content="#0f296b">
+    <meta name="description" content="CSC Service Centre Amjhar Sharif, Haspura — digital services, public documents, online forms and citizen support.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CSC Service Centre | Amjhar Sharif, Haspura">
+    <meta property="og:description" content="Digital Seva Kendra — public documents, online services and citizen support.">
+    <meta property="og:site_name" content="CSC Service Centre Amjhar Sharif">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f296b'/%3E%3Ccircle cx='32' cy='27' r='13' fill='%23f97316'/%3E%3Cpath d='M16 46h32' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Ctext x='32' y='31' text-anchor='middle' font-size='10' font-family='Arial' font-weight='700' fill='white'%3ECSC%3C/text%3E%3C/svg%3E">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Inter & Hind for Hindi/English readability -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Hind', 'sans-serif'],
+                    },
+                    colors: {
+                        cscBlue: '#0f296b',
+                        cscLightBlue: '#1e40af',
+                        cscSaffron: '#f97316',
+                        cscGreen: '#16a34a',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Animations */
+        body {
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .tricolor-bar {
+            background: linear-gradient(90deg, #FF9933 0%, #FF9933 33%, #FFFFFF 33%, #FFFFFF 66%, #138808 66%, #138808 100%);
+            height: 5px;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #091945 0%, #1e3a8a 60%, #172554 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(15, 41, 107, 0.12), 0 10px 10px -5px rgba(15, 41, 107, 0.06);
+        }
+        .pulse-badge {
+            animation: pulse-ring 2s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(249, 115, 22, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* ================= PREMIUM PROFESSIONAL UI ================= */
+        html { scroll-padding-top: 110px; }
+        body {
+            background:
+                radial-gradient(circle at 10% 10%, rgba(30,64,175,.05), transparent 28%),
+                radial-gradient(circle at 90% 20%, rgba(249,115,22,.045), transparent 25%),
+                #f8fafc;
+        }
+        .hero-gradient {
+            background:
+                radial-gradient(circle at 85% 20%, rgba(249,115,22,.20), transparent 24%),
+                radial-gradient(circle at 15% 80%, rgba(56,189,248,.12), transparent 25%),
+                linear-gradient(135deg,#061538 0%,#0f296b 45%,#172554 100%);
+        }
+        .premium-shadow { box-shadow: 0 20px 50px rgba(15,41,107,.12); }
+        .premium-card {
+            background: rgba(255,255,255,.92);
+            border: 1px solid rgba(148,163,184,.22);
+            box-shadow: 0 12px 35px rgba(15,41,107,.08);
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+        .premium-card:hover { transform: translateY(-4px); box-shadow: 0 20px 45px rgba(15,41,107,.13); border-color: rgba(30,64,175,.20); }
+        .section-kicker { letter-spacing: .14em; text-transform: uppercase; font-size: .72rem; font-weight: 800; color:#f97316; }
+        .section-title { letter-spacing:-.025em; }
+        .nav-glow { box-shadow: 0 8px 30px rgba(15,41,107,.10); }
+        .hero-grid-glow { position:absolute; inset:0; opacity:.16; background-image: linear-gradient(rgba(255,255,255,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.10) 1px,transparent 1px); background-size:42px 42px; mask-image:linear-gradient(to bottom,black,transparent); pointer-events:none; }
+        .stat-card { position:relative; overflow:hidden; }
+        .stat-card::after { content:''; position:absolute; width:90px;height:90px;border-radius:999px;right:-28px;top:-28px;background:rgba(255,255,255,.10); }
+        .floating-whatsapp { box-shadow:0 14px 35px rgba(22,163,74,.32); animation:floatBtn 3s ease-in-out infinite; }
+        @keyframes floatBtn { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+        .shine-btn { position:relative; overflow:hidden; }
+        .shine-btn::before { content:''; position:absolute; top:0; left:-120%; width:70%; height:100%; background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent); transform:skewX(-20deg); transition:left .65s ease; }
+        .shine-btn:hover::before { left:150%; }
+        .verified-dot { width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.12); }
+        .glass-card { background:rgba(255,255,255,.96); box-shadow:0 25px 70px rgba(0,0,0,.20); }
+        .service-card { border:1px solid rgba(148,163,184,.18); box-shadow:0 10px 30px rgba(15,41,107,.06); }
+        @media (max-width: 640px) {
+            .hero-gradient { padding-top: 2.75rem; padding-bottom: 3.25rem; }
+            .premium-shadow { box-shadow:0 14px 35px rgba(15,41,107,.10); }
+        }
+
+        /* ================= NEXT-LEVEL PROFESSIONAL POLISH ================= */
+        :root { --csc-blue:#0f296b; --csc-orange:#f97316; --csc-green:#16a34a; }
+        ::selection { background:#f97316; color:#fff; }
+        .topbar { background:linear-gradient(90deg,#07132f,#0f296b,#07132f); }
+        .nav-shell { background:rgba(255,255,255,.88); border-bottom:1px solid rgba(15,41,107,.08); }
+        .brand-mark { position:relative; overflow:hidden; }
+        .brand-mark::after { content:''; position:absolute; inset:-40%; background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.32) 50%,transparent 65%); transform:translateX(-70%) rotate(12deg); transition:transform .8s ease; }
+        .group:hover .brand-mark::after { transform:translateX(70%) rotate(12deg); }
+        .nav-link { position:relative; }
+        .nav-link::after { content:''; position:absolute; left:0; right:0; bottom:-8px; height:2px; border-radius:99px; background:#f97316; transform:scaleX(0); transform-origin:center; transition:transform .25s ease; }
+        .nav-link:hover::after { transform:scaleX(1); }
+        .mobile-menu { max-height:0; opacity:0; overflow:hidden; transition:max-height .35s ease,opacity .25s ease; }
+        .mobile-menu.open { max-height:420px; opacity:1; }
+        .hero-section { position:relative; isolation:isolate; }
+        .hero-orb { filter:blur(1px); animation:orbFloat 7s ease-in-out infinite; }
+        @keyframes orbFloat { 0%,100%{transform:translate3d(0,0,0) scale(1)} 50%{transform:translate3d(0,-12px,0) scale(1.04)} }
+        .hero-title { text-shadow:0 10px 35px rgba(0,0,0,.22); }
+        .glass-card { border:1px solid rgba(255,255,255,.55); box-shadow:0 30px 80px rgba(0,0,0,.28); }
+        .contact-row { transition:transform .2s ease, background .2s ease, border-color .2s ease; border:1px solid transparent; }
+        .contact-row:hover { transform:translateY(-2px); background:#fff; border-color:rgba(15,41,107,.12); }
+        .section-wrap { position:relative; }
+        .section-wrap::before { content:''; position:absolute; width:280px; height:280px; border-radius:50%; background:rgba(30,64,175,.045); filter:blur(30px); top:10%; left:-180px; pointer-events:none; }
+        .service-card, .premium-card { will-change:transform; }
+        .service-card:hover { transform:translateY(-7px) scale(1.01); }
+        .reveal { opacity:0; transform:translateY(18px); transition:opacity .7s ease,transform .7s ease; }
+        .reveal.visible { opacity:1; transform:none; }
+        .back-top { opacity:0; pointer-events:none; transform:translateY(12px); transition:.25s ease; }
+        .back-top.show { opacity:1; pointer-events:auto; transform:none; }
+        .floating-whatsapp { z-index:60; }
+        @media (prefers-reduced-motion: reduce) {
+            *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+            .reveal { opacity:1; transform:none; }
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Tricolor Accent Bar -->
+    <div class="tricolor-bar w-full sticky top-0 z-50"></div>
+
+    <!-- Top Utility Bar -->
+    <div class="topbar text-white text-xs sm:text-sm py-2.5 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-3">
+                <span class="bg-cscSaffron text-white font-bold px-2 py-0.5 rounded text-xs tracking-wider uppercase">Digital India</span>
+                <span class="text-slate-300 hidden sm:inline">Common Service Centre (डिजिटल सेवा केंद्र)</span>
+            </div>
+            <div class="flex items-center space-x-4 font-medium">
+                <span class="flex items-center text-amber-400">
+                    <i class="fa-solid fa-user-tie mr-1.5"></i> Pro: BHARAT KUMAR
+                </span>
+                <a href="tel:9199755429" class="hover:text-cscSaffron transition flex items-center">
+                    <i class="fa-solid fa-phone-volume mr-1.5 text-green-400"></i> 9199755429
+                </a>
+<button onclick="sharePortal()" class="hidden sm:flex items-center gap-1.5 text-white/90 hover:text-white transition font-semibold" title="Share this portal">
+    <i class="fa-solid fa-share-nodes text-sky-300"></i> Share Portal
+</button>
+                <a href="https://wa.me/919199755429?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition flex items-center">
+                    <i class="fa-brands fa-whatsapp mr-1.5 text-green-400"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="nav-shell backdrop-blur-xl shadow-md sticky top-[5px] z-40 nav-glow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Brand Logo & Name -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="brand-mark w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-cscBlue to-blue-600 flex flex-col items-center justify-center text-white shadow-lg group-hover:scale-105 transition">
+                        <i class="fa-solid fa-globe text-lg sm:text-xl text-orange-400"></i>
+                        <span class="text-[10px] font-extrabold tracking-widest mt-0.5">CSC</span>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h1 class="text-base sm:text-xl md:text-2xl font-extrabold text-cscBlue tracking-tight leading-none">
+                                CSC SERVICE CENTRE
+                            </h1>
+                            <span class="hidden md:inline-block bg-green-100 text-green-800 text-[11px] font-bold px-2 py-0.5 rounded-full border border-green-300">
+                                Verified Portal
+                            </span>
+                        </div>
+                        <p class="text-xs sm:text-sm font-bold text-cscSaffron mt-0.5">
+                            AMJHAR SHARIF, HASPURA (औरंगाबाद)
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Navigation Links & Owner Button -->
+                <div class="flex items-center space-x-2 sm:space-x-6">
+                    <nav class="hidden lg:flex space-x-6 font-semibold text-sm text-slate-600">
+                        <a href="#documents-section" class="nav-link hover:text-cscBlue transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-folder-open text-cscSaffron"></i> Public Documents
+                        </a>
+                        <a href="#services-section" class="nav-link hover:text-cscBlue transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-layer-group text-cscBlue"></i> Our Services
+                        </a>
+                        <a href="#contact-section" class="nav-link hover:text-cscBlue transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-location-dot text-green-600"></i> Contact Info
+                        </a>
+                    </nav>
+
+                    <!-- Admin / Owner Button -->
+                    <button id="navOwnerBtn" onclick="handleOwnerAction()" class="bg-gradient-to-r from-cscSaffron to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-xs sm:text-sm px-3.5 py-2.5 sm:px-5 sm:py-2.5 rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2 pulse-badge">
+                        <i class="fa-solid fa-lock" id="ownerBtnIcon"></i>
+                        <span id="ownerBtnText">Owner Upload</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Live Marquee Notice Bar -->
+    <div class="bg-amber-50 border-b border-amber-200 py-2 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex items-center">
+            <span class="bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-md mr-3 shrink-0 flex items-center gap-1 shadow-sm">
+                <i class="fa-solid fa-bullhorn animate-bounce"></i> सूचना
+            </span>
+            <marquee class="text-xs sm:text-sm font-semibold text-slate-800" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                स्वागत है! CSC SERVICE CENTRE, AMJHAR SHARIF, HASPURA में सभी प्रकार के ऑनलाइन फॉर्म, जाति, आवासीय, आय प्रमाण पत्र, पैन कार्ड, आयुष्मान कार्ड, आधार निकासी (AEPS), और सरकारी योजनाओं का काम किया जाता है। नीचे दिए गए "Public Documents" सेक्शन से आप बिना किसी पासवर्ड के आवश्यक फॉर्म और दस्तावेज डाउनलोड कर सकते हैं। (प्रो० भरत कुमार - मो० 9546662104)
+            </marquee>
+        </div>
+    </div>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-gradient text-white py-10 sm:py-16 px-4 relative overflow-hidden">
+        <div class="hero-grid-glow"></div>
+        <!-- Decorative Background Elements -->
+        <div class="hero-orb absolute -top-24 -right-24 w-96 h-96 bg-orange-500 rounded-full opacity-10 blur-3xl pointer-events-none"></div>
+        <div class="hero-orb absolute -bottom-24 -left-24 w-96 h-96 bg-blue-400 rounded-full opacity-15 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <!-- Left Column: Center Introduction -->
+            <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-amber-300 backdrop-blur-sm">
+                    <i class="fa-solid fa-award text-orange-400"></i>
+                    <span>जन सेवा केंद्र • एक कदम डिजिटल भारत की ओर</span>
+                </div>
+
+                <h2 class="hero-title text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                    CSC SERVICE CENTRE <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-200">
+                        AMJHAR SHARIF, HASPURA
+                    </span>
+                </h2>
+
+                <p class="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                    आपका विश्वसनीय डिजिटल सेवा केंद्र। यहाँ सभी सरकारी एवं गैर-सरकारी ऑनलाइन सेवाएं, प्रमाण पत्र, बैंकिंग और महत्वपूर्ण दस्तावेज तुरंत और सही समय पर उपलब्ध कराए जाते हैं। किसी भी दस्तावेज को देखने या डाउनलोड करने के लिए नीचे स्क्रॉल करें।
+                </p>
+
+                <!-- Quick Action CTA Buttons -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
+                    <a href="#documents-section" class="bg-white text-cscBlue hover:bg-amber-50 font-bold px-5 py-3 rounded-xl shadow-lg transition flex items-center gap-2 text-sm sm:text-base">
+                        <i class="fa-solid fa-eye text-cscSaffron"></i>
+                        <span>View Uploaded Documents (दस्तावेज़ देखें)</span>
+                    </a>
+                    <a href="https://wa.me/919546662104?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white font-bold px-5 py-3 rounded-xl shadow-lg transition flex items-center gap-2 text-sm sm:text-base shine-btn">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Chat</span>
+                    </a>
+                </div>
+
+                <!-- Feature Pills -->
+                <div class="pt-4 grid grid-cols-3 gap-2 sm:gap-4 max-w-lg mx-auto lg:mx-0 text-center">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2.5 border border-white/10">
+                        <div class="text-amber-400 font-extrabold text-lg sm:text-xl">100%</div>
+                        <div class="text-[11px] sm:text-xs text-slate-300">Open Document Access</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2.5 border border-white/10">
+                        <div class="text-green-400 font-extrabold text-lg sm:text-xl">1000+</div>
+                        <div class="text-[11px] sm:text-xs text-slate-300">Online e-Services</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2.5 border border-white/10">
+                        <div class="text-sky-300 font-extrabold text-lg sm:text-xl">Fast</div>
+                        <div class="text-[11px] sm:text-xs text-slate-300">Instant Support</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Proprietor Profile Card -->
+            <div class="lg:col-span-5">
+                <div class="glass-card text-slate-800 rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-orange-400/60 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-cscSaffron text-white text-[11px] font-extrabold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                        Proprietor / संचालक
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-tr from-cscBlue to-blue-500 text-white flex items-center justify-center text-2xl sm:text-3xl font-extrabold shadow-md shrink-0 border-2 border-amber-300">
+                            BK
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block">Authorized VLE</span>
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-cscBlue">BHARAT KUMAR</h3>
+                            <p class="text-xs sm:text-sm font-semibold text-orange-600">प्रो०: भरत कुमार (अमझर शरीफ, हसपुरा)</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4 border-slate-200">
+
+                    <div class="space-y-3 text-sm">
+                        <div class="space-y-2">
+                            <div class="contact-row flex items-center justify-between bg-slate-100 p-3 rounded-xl">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-9 h-9 rounded-lg bg-blue-100 text-cscBlue flex items-center justify-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-500 font-medium">Owner Contact 1 / Mobile</div>
+                                        <div class="text-base font-extrabold text-slate-900 tracking-wide">+91 9199755429</div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-1.5">
+                                    <a href="tel:9199755429" class="text-xs bg-white hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg border border-slate-300 transition" title="Call">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="https://wa.me/919199755429?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer" class="text-xs bg-green-600 hover:bg-green-700 text-white font-semibold px-2.5 py-1.5 rounded-lg transition" title="WhatsApp">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-row flex items-center justify-between bg-slate-100 p-3 rounded-xl">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-9 h-9 rounded-lg bg-green-100 text-green-700 flex items-center justify-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-500 font-medium">Owner Contact 2 / Mobile</div>
+                                        <div class="text-base font-extrabold text-slate-900 tracking-wide">+91 9546662104</div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-1.5">
+                                    <a href="tel:9546662104" class="text-xs bg-white hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg border border-slate-300 transition" title="Call">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="https://wa.me/919546662104?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer" class="text-xs bg-green-600 hover:bg-green-700 text-white font-semibold px-2.5 py-1.5 rounded-lg transition" title="WhatsApp">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3 bg-slate-100 p-3 rounded-xl">
+                            <div class="w-9 h-9 rounded-lg bg-orange-100 text-cscSaffron flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">Centre Location / पता</div>
+                                <div class="font-bold text-slate-800 text-xs sm:text-sm">Amjhar Sharif, Block: Haspura, Dist: Aurangabad (Bihar)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 mt-5">
+                        <a href="tel:9199755429" class="bg-cscBlue hover:bg-blue-800 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone-volume"></i> Call Owner 1
+                        </a>
+                        <a href="https://wa.me/919199755429?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Owner 1
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OWNER ADMIN UPLOAD DASHBOARD (Hidden until unlocked with Password) -->
+    <section id="ownerAdminSection" class="hidden bg-gradient-to-b from-amber-50 to-white border-b-2 border-orange-300 py-8 px-4 transition-all">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-xl border-2 border-orange-400 overflow-hidden">
+                <!-- Admin Header -->
+                <div class="bg-gradient-to-r from-cscBlue to-slate-900 text-white px-6 py-4 flex flex-wrap justify-between items-center gap-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white text-lg shadow">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-lg font-extrabold tracking-wide">OWNER DOCUMENT UPLOAD PANEL</h3>
+                                <span class="bg-green-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Unlocked</span>
+                            </div>
+                            <p class="text-xs text-amber-300">Welcome, Bharat Kumar! This version protects the owner login, but uploaded files are stored locally in this browser. For shared multi-device uploads, use a secure server/database + cloud storage.</p>
+                        </div>
+                    </div>
+                    <button onclick="logoutOwner()" class="bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-xl shadow transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-right-from-bracket"></i> Lock & Logout
+                    </button>
+                </div>
+
+                <!-- Admin Statistics -->
+                <div class="px-6 sm:px-8 pt-6 grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="rounded-2xl border border-blue-100 bg-blue-50 p-4"><div class="text-xs font-bold text-blue-700">TOTAL DOCUMENTS</div><div id="statTotalDocs" class="text-2xl font-extrabold text-cscBlue mt-1">0</div></div>
+                    <div class="rounded-2xl border border-green-100 bg-green-50 p-4"><div class="text-xs font-bold text-green-700">PDF / FILES</div><div id="statFiles" class="text-2xl font-extrabold text-green-700 mt-1">0</div></div>
+                    <div class="rounded-2xl border border-orange-100 bg-orange-50 p-4"><div class="text-xs font-bold text-orange-700">IMAGES</div><div id="statImages" class="text-2xl font-extrabold text-orange-700 mt-1">0</div></div>
+                    <div class="rounded-2xl border border-purple-100 bg-purple-50 p-4"><div class="text-xs font-bold text-purple-700">STORAGE</div><div id="statStorage" class="text-2xl font-extrabold text-purple-700 mt-1">0 MB</div></div>
+                </div>
+
+                <!-- Local Backup Tools -->
+                <div class="px-6 sm:px-8 pt-5">
+                    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                        <div><p class="font-extrabold text-slate-800 text-sm">Backup & Restore</p><p class="text-xs text-slate-500">Export your portal documents before changing browser/device.</p></div>
+                        <div class="flex gap-2 flex-wrap">
+                            <button type="button" onclick="exportPortalBackup()" class="px-4 py-2 rounded-xl bg-cscBlue text-white text-xs font-bold hover:bg-blue-800"><i class="fa-solid fa-download mr-1"></i> Export Backup</button>
+                            <label class="px-4 py-2 rounded-xl bg-white border border-slate-300 text-slate-700 text-xs font-bold hover:bg-slate-100 cursor-pointer"><i class="fa-solid fa-upload mr-1"></i> Restore Backup<input type="file" accept=".json,application/json" class="hidden" onchange="importPortalBackup(this)"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload Form Body -->
+                <form id="documentUploadForm" onsubmit="handleDocumentUpload(event)" class="p-6 sm:p-8 space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Document Title -->
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                Document Title / दस्तावेज़ का नाम <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="docTitle" required placeholder="e.g., जाति/आवासीय प्रमाण पत्र फॉर्म या आवश्यक सूचना" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-cscBlue focus:ring-2 focus:ring-blue-200 outline-none text-sm font-medium transition">
+                        </div>
+
+                        <!-- Category Selection -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                Category / श्रेणी <span class="text-red-500">*</span>
+                            </label>
+                            <select id="docCategory" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-cscBlue focus:ring-2 focus:ring-blue-200 outline-none text-sm font-semibold text-slate-700 bg-white transition">
+                                <option value="Public Notice">📢 Public Notice (सूचना)</option>
+                                <option value="Application Form">📄 Application Form (आवेदन फॉर्म)</option>
+                                <option value="Certificate & ID">🪪 Certificate / Customer Doc (प्रमाण पत्र)</option>
+                                <option value="Scheme Info">🏛️ Govt Scheme Info (सरकारी योजना)</option>
+                                <option value="Rate Chart">₹ Rate List / Other (रेट चार्ट/अन्य)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                        <!-- File Input Dropzone -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                Select File (PDF, Image, Word, Notice) <span class="text-red-500">*</span>
+                            </label>
+                            <label for="docFile" class="flex flex-col items-center justify-center w-full h-36 border-2 border-dashed border-blue-400 rounded-2xl cursor-pointer bg-blue-50/50 hover:bg-blue-50 transition p-4 text-center">
+                                <div class="flex flex-col items-center justify-center pt-2 pb-3">
+                                    <i class="fa-solid fa-cloud-arrow-up text-3xl text-cscBlue mb-2"></i>
+                                    <p class="text-xs sm:text-sm text-slate-700 font-bold" id="selectedFileName">Click to browse & select document</p>
+                                    <p class="text-[11px] text-slate-500 mt-1">Supports Images (JPG, PNG), PDF, TXT, DOC (Up to 15MB)</p>
+                                </div>
+                                <input id="docFile" type="file" accept=".pdf,image/*,.doc,.docx,.txt" class="hidden" onchange="updateSelectedFileName(this)">
+                            </label>
+                        </div>
+
+                        <!-- Description / Instructions -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                                Description / विवरण (Optional)
+                            </label>
+                            <textarea id="docDesc" rows="4" placeholder="इस दस्तावेज़ या फॉर्म के बारे में जानकारी लिखें (जैसे- किन कागजातों की जरूरत है)..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-cscBlue focus:ring-2 focus:ring-blue-200 outline-none text-sm font-medium transition"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-200">
+                        <p class="text-xs text-slate-500 flex items-center gap-1.5">
+                            <i class="fa-solid fa-circle-check text-green-600"></i>
+                            Uploaded documents are saved automatically and can be viewed by anyone without a password.
+                        </p>
+                        <button type="submit" id="uploadSubmitBtn" class="bg-cscGreen hover:bg-green-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-upload"></i>
+                            <span>Publish Document Now</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLIC VIEWER DOCUMENT SECTION (NO PASSWORD REQUIRED) -->
+    <main id="documents-section" class="py-12 px-4 max-w-7xl mx-auto w-full flex-grow">
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 text-xs font-extrabold px-3 py-1 rounded-full border border-green-300 mb-2">
+                    <i class="fa-solid fa-lock-open"></i>
+                    <span>OPEN ACCESS FOR ALL VIEWERS • बिना पासवर्ड के दस्तावेज देखें</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-cscBlue">
+                    Uploaded Documents & Public Notices
+                </h2>
+                <p class="text-slate-600 text-sm mt-1">
+                    यहाँ अपलोड किए गए सभी फॉर्म, सूचनाएं और दस्तावेज आप बिना किसी पासवर्ड के सीधे देख (Preview) और डाउनलोड (Download) कर सकते हैं।
+                </p>
+            </div>
+
+            <!-- Owner Quick Upload Trigger -->
+            <div class="shrink-0">
+                <button onclick="handleOwnerAction()" class="text-xs sm:text-sm font-bold text-cscBlue bg-blue-50 hover:bg-blue-100 border border-blue-200 px-4 py-2.5 rounded-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-cloud-arrow-up text-cscSaffron"></i>
+                    <span>Owner Upload Document</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search & Category Filter Bar -->
+        <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between">
+            <!-- Search Input -->
+            <div class="relative w-full lg:w-96">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                <input type="text" id="searchInput" oninput="renderDocuments()" placeholder="Search document by name or keyword..." class="w-full pl-11 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:border-cscBlue outline-none transition">
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="flex items-center gap-2 overflow-x-auto w-full lg:w-auto pb-1 lg:pb-0" id="categoryFilterContainer">
+                <button onclick="setCategoryFilter('ALL')" data-cat="ALL" class="cat-btn bg-cscBlue text-white text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition">
+                    All Documents
+                </button>
+                <button onclick="setCategoryFilter('Public Notice')" data-cat="Public Notice" class="cat-btn bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition">
+                    📢 Notices
+                </button>
+                <button onclick="setCategoryFilter('Application Form')" data-cat="Application Form" class="cat-btn bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition">
+                    📄 Forms
+                </button>
+                <button onclick="setCategoryFilter('Certificate & ID')" data-cat="Certificate & ID" class="cat-btn bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition">
+                    🪪 Certificates
+                </button>
+                <button onclick="setCategoryFilter('Scheme Info')" data-cat="Scheme Info" class="cat-btn bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition">
+                    🏛️ Schemes
+                </button>
+                <button onclick="setCategoryFilter('Rate Chart')" data-cat="Rate Chart" class="cat-btn bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition">
+                    ₹ Rate Chart
+                </button>
+            </div>
+        </div>
+
+        <!-- Document Cards Grid -->
+        <div id="documentsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyDocsState" class="hidden bg-white rounded-3xl p-12 text-center border border-dashed border-slate-300 my-4">
+            <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto text-2xl mb-3">
+                <i class="fa-regular fa-folder-open"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-700">No Matching Documents Found</h3>
+            <p class="text-xs sm:text-sm text-slate-500 max-w-md mx-auto mt-1">
+                Try clearing your search filter, or if you are the owner (Bharat Kumar), log in above to upload a new document.
+            </p>
+        </div>
+    </main>
+
+    <!-- CSC SERVICES SHOWCASE SECTION -->
+    <section id="services-section" class="reveal bg-slate-100 py-14 px-4 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-cscSaffron bg-orange-100 px-3 py-1 rounded-full">
+                    Our Digital Services • हमारी प्रमुख सेवाएं
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-cscBlue mt-2">
+                    All Online & Government Services Under One Roof
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    CSC Service Centre, Amjhar Sharif, Haspura में उपलब्ध प्रमुख ऑनलाइन सेवाएं
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-orange-100 text-cscSaffron flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">जाति, आवासीय, आय प्रमाण पत्र</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        RTPS बिहार के माध्यम से जाति, निवास, आय, और EWS/NCL प्रमाण पत्र का ऑनलाइन आवेदन एवं डाउनलोड।
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-cscBlue flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">पैन कार्ड एवं आधार सेवाएं</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        नया पैन कार्ड (PAN Card), पैन सुधार, आधार प्रिंट, और मोबाइल लिंक की जानकारी एवं सहायता।
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">बैंकिंग सेवा (AEPS / Money Transfer)</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        आधार कार्ड के माध्यम से किसी भी बैंक खाते से नकद निकासी, बैलेंस जांच और मनी ट्रांसफर।
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">आयुष्मान भारत कार्ड एवं राशन कार्ड</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        5 लाख तक के मुफ्त इलाज हेतु आयुष्मान कार्ड केवाईसी, नया राशन कार्ड ऑनलाइन आवेदन एवं सुधार।
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">पीएम किसान एवं कृषि योजनाएं</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        PM Kisan e-KYC, किसान पंजीकरण, डीजल अनुदान, और फसल बीमा योजना का ऑनलाइन फॉर्म।
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">ऑनलाइन फॉर्म एवं छात्रवृत्ति</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        सभी सरकारी नौकरी फॉर्म, एडमिट कार्ड, रिजल्ट, पोस्ट मैट्रिक स्कॉलरशिप एवं कॉलेज एडमिशन।
+                    </p>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">जमीन रसीद, दाखिल-खारिज एवं एलपीसी</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        बिहार भूमि पोर्टल से जमीन का लगान रसीद काटना, दाखिल-खारिज, परिमार्जन और LPC आवेदन।
+                    </p>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 service-card">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-bold text-base text-slate-900">बिजली बिल, टिकट एवं रिचार्ज</h3>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        बिजली बिल भुगतान, नया बिजली कनेक्शन, ट्रेन/फ्लाइट टिकट बुकिंग, वाहन बीमा और लेमिनेशन।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <footer id="contact-section" class="bg-slate-900 text-slate-300 pt-12 pb-8 px-4 border-t-4 border-cscSaffron">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-800">
+            <!-- Col 1: About Center -->
+            <div class="space-y-3">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-cscSaffron text-white flex items-center justify-center font-extrabold">
+                        CSC
+                    </div>
+                    <div>
+                        <h4 class="text-white font-extrabold text-base">CSC SERVICE CENTRE</h4>
+                        <p class="text-xs text-amber-400 font-semibold">AMJHAR SHARIF, HASPURA</p>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    डिजिटल सेवा केंद्र (Common Service Centre) - ग्राम पंचायत अमझर शरीफ, प्रखंड हसपुरा के नागरिकों के लिए समर्पित ऑनलाइन सूचना एवं दस्तावेज़ पोर्टल।
+                </p>
+            </div>
+
+            <!-- Col 2: Proprietor & Contact Details -->
+            <div class="space-y-2.5 text-sm">
+                <h4 class="text-white font-bold uppercase tracking-wider text-xs text-amber-400">Personal & Contact Information</h4>
+                <p class="flex items-center gap-2.5 text-white font-semibold">
+                    <i class="fa-solid fa-user-check text-cscSaffron w-4"></i>
+                    <span>Pro: BHARAT KUMAR (भरत कुमार)</span>
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <i class="fa-solid fa-phone text-green-400 w-4"></i>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                                <span class="text-xs text-slate-400">Owner 1</span>
+                                <a href="tel:9199755429" class="hover:text-white font-bold tracking-wide">+91 9199755429</a>
+                            </div>
+                        </div>
+                        <div class="flex gap-1.5 shrink-0">
+                            <a href="tel:9199755429" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-200 transition" title="Call Owner 1">
+                                <i class="fa-solid fa-phone text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/919199755429?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-green-600 hover:bg-green-500 flex items-center justify-center text-white transition" title="WhatsApp Owner 1">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <i class="fa-solid fa-phone text-green-400 w-4"></i>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                                <span class="text-xs text-slate-400">Owner 2</span>
+                                <a href="tel:9546662104" class="hover:text-white font-bold tracking-wide">+91 9546662104</a>
+                            </div>
+                        </div>
+                        <div class="flex gap-1.5 shrink-0">
+                            <a href="tel:9546662104" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-200 transition" title="Call Owner 2">
+                                <i class="fa-solid fa-phone text-xs"></i>
+                            </a>
+                            <a href="https://wa.me/919546662104?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-green-600 hover:bg-green-500 flex items-center justify-center text-white transition" title="WhatsApp Owner 2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="flex items-center gap-2.5 text-xs text-slate-400">
+                    <i class="fa-solid fa-location-dot text-sky-400 w-4"></i>
+                    <span>Amjhar Sharif, Haspura, Aurangabad, Bihar - 824120</span>
+                </p>
+                <p class="flex items-center gap-2.5 text-xs text-slate-400">
+                    <i class="fa-regular fa-clock text-amber-400 w-4"></i>
+                    <span>खुले रहने का समय: सुबह 07:00 से शाम 08:00 बजे तक (प्रतिदिन)</span>
+                </p>
+            </div>
+
+            <!-- Col 3: Quick Portal Links -->
+            <div class="space-y-3">
+                <h4 class="text-white font-bold uppercase tracking-wider text-xs text-amber-400">Portal Access</h4>
+                <div class="flex flex-col space-y-2 text-xs">
+                    <a href="#documents-section" class="hover:text-white transition flex items-center gap-2">
+                        <i class="fa-solid fa-angle-right text-cscSaffron"></i> Public Uploaded Documents (No Password)
+                    </a>
+                    <a href="#services-section" class="hover:text-white transition flex items-center gap-2">
+                        <i class="fa-solid fa-angle-right text-cscSaffron"></i> Available CSC Services List
+                    </a>
+                    <button onclick="handleOwnerAction()" class="text-left hover:text-white transition flex items-center gap-2 text-amber-300 font-semibold">
+                        <i class="fa-solid fa-lock text-cscSaffron"></i> Owner Document Upload Login
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-2">
+            <p>© <span id="currentYear"></span> CSC SERVICE CENTRE, AMJHAR SHARIF, HASPURA. All rights reserved.</p>
+            <p>Operated by <strong class="text-slate-300">Pro. BHARAT KUMAR (Mob: 9546662104)</strong></p>
+        </div>
+    </footer>
+
+    <!-- OWNER PASSWORD AUTHENTICATION MODAL -->
+    <div id="loginModal" class="fixed inset-0 bg-slate-900/75 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full shadow-2xl border border-slate-200 overflow-hidden animate-fadeIn">
+            <div class="bg-gradient-to-r from-cscBlue to-blue-800 text-white p-6 relative">
+                <button onclick="closeLoginModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="w-12 h-12 rounded-2xl bg-cscSaffron text-white flex items-center justify-center text-xl font-bold mb-3 shadow">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <h3 class="text-xl font-extrabold">Owner Authentication</h3>
+                <p class="text-xs text-blue-200 mt-0.5">CSC SERVICE CENTRE, AMJHAR SHARIF (Pro: Bharat Kumar)</p>
+            </div>
+
+            <form onsubmit="verifyOwnerPassword(event)" class="p-6 space-y-4">
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-900 flex items-start gap-2.5">
+                    <i class="fa-solid fa-circle-info text-amber-600 mt-0.5"></i>
+                    <div>
+                        <strong>Note for Viewers:</strong> You do <u>not</u> need a password to view or download documents. Only the Centre Owner needs a password to upload new files.
+                    </div>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 text-xs text-blue-900 flex items-start gap-2.5">
+                    <i class="fa-solid fa-shield-halved text-blue-600 mt-0.5"></i>
+                    <div><strong>Protected login:</strong> password is checked using SHA-256 in the browser and repeated failed attempts are temporarily rate-limited.</div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                        Enter Owner Password <span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative">
+                        <input type="password" id="ownerPasswordInput" required placeholder="Enter owner password..." class="w-full pl-4 pr-11 py-3 rounded-xl border border-slate-300 focus:border-cscBlue focus:ring-2 focus:ring-blue-200 outline-none text-sm font-semibold">
+                        <button type="button" onclick="togglePasswordVisibility()" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+                            <i class="fa-regular fa-eye" id="eyeIcon"></i>
+                        </button>
+                    </div>
+                    <p id="loginErrorMsg" class="hidden text-xs text-red-600 font-semibold mt-2 flex items-center gap-1">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Incorrect password! Only Owner Bharat Kumar can upload documents.
+                    </p>
+                </div>
+
+                <div class="flex justify-end gap-3 pt-2">
+                    <button type="button" onclick="closeLoginModal()" class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-xs hover:bg-slate-100 transition">
+                        Cancel
+                    </button>
+                    <button type="submit" class="bg-cscBlue hover:bg-blue-800 text-white font-bold px-6 py-2.5 rounded-xl text-xs shadow-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i> Unlock Upload Panel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- DOCUMENT VIEWER / PREVIEW MODAL (Accessible Without Password) -->
+    <div id="previewModal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden items-center justify-center p-2 sm:p-4">
+        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+            <!-- Modal Header -->
+            <div class="bg-slate-900 text-white px-5 py-4 flex items-center justify-between gap-4 shrink-0">
+                <div class="min-w-0">
+                    <span id="previewModalCategory" class="text-[10px] font-extrabold uppercase tracking-wider bg-cscSaffron text-white px-2.5 py-0.5 rounded-full">Category</span>
+                    <h3 id="previewModalTitle" class="text-base sm:text-lg font-extrabold truncate mt-1">Document Title</h3>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                    <a id="previewDownloadBtn" href="#" download class="bg-cscGreen hover:bg-green-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow">
+                        <i class="fa-solid fa-download"></i> Download
+                    </a>
+                    <button onclick="closePreviewModal()" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal Content Body -->
+            <div class="p-5 overflow-y-auto space-y-4 flex-grow bg-slate-50" id="previewModalBody">
+                <!-- Populated dynamically -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="bg-white border-t border-slate-200 px-5 py-3 flex flex-wrap justify-between items-center text-xs text-slate-500 gap-2 shrink-0">
+                <span>CSC SERVICE CENTRE, AMJHAR SHARIF, HASPURA • Pro: BHARAT KUMAR (9546662104)</span>
+                <button onclick="closePreviewModal()" class="font-bold text-slate-700 hover:text-slate-900 px-3 py-1 rounded-lg bg-slate-100">Close Preview</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELETE CONFIRMATION MODAL (No browser confirm()) -->
+    <div id="deleteConfirmModal" class="fixed inset-0 bg-slate-900/75 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl text-center space-y-4">
+            <div class="w-12 h-12 rounded-full bg-red-100 text-red-600 flex items-center justify-center mx-auto text-xl">
+                <i class="fa-solid fa-trash-can"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900">Delete This Document?</h3>
+            <p class="text-xs text-slate-600">Are you sure you want to permanently remove this document from the public portal?</p>
+            <div class="flex justify-center gap-3 pt-2">
+                <button onclick="closeDeleteModal()" class="px-4 py-2 rounded-xl border border-slate-300 text-slate-700 text-xs font-bold hover:bg-slate-100">Cancel</button>
+                <button id="confirmDeleteBtn" class="px-5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-bold shadow">Yes, Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-xs w-full pointer-events-none"></div>
+
+    <!-- APPLICATION JAVASCRIPT -->
+    <script>
+        // ============================================================================
+        // CONFIGURATION & STATE
+        // ============================================================================
+        // SECURITY NOTE: This static HTML uses a SHA-256 password hash + rate limiting.
+// For true server-side security, move authentication/uploads to a backend.
+        const OWNER_PASSWORD_HASH = "5855661b4ebfd0225977fe3af51a64238a7cc62301fc448554c18477c3bc73ec";
+        const MAX_LOGIN_ATTEMPTS = 5;
+        const LOCKOUT_MS = 15 * 60 * 1000;
+        let loginAttempts = Number(sessionStorage.getItem("csc_login_attempts") || 0);
+        let lockoutUntil = Number(sessionStorage.getItem("csc_lockout_until") || 0);
+        let isOwnerAuthenticated = false;
+        let currentCategoryFilter = "ALL";
+        let documentsList = [];
+        let pendingDeleteId = null;
+
+        // IndexedDB Setup for persistent storage of uploaded documents (PDFs/Images)
+        const DB_NAME = "CSC_AmjharSharif_DB";
+        const STORE_NAME = "uploaded_documents";
+        let dbInstance = null;
+
+        // Default Pre-Loaded Sample Notices & Documents for Immediate Richness
+        const DEFAULT_DOCUMENTS = [
+            {
+                id: "sample-doc-1",
+                title: "जाति, आवासीय एवं आय प्रमाण पत्र के लिए आवश्यक दस्तावेज (Required Documents List)",
+                category: "Public Notice",
+                description: "RTPS बिहार पोर्टल से जाति, निवास और आय प्रमाण पत्र बनवाने के लिए: 1. आधार कार्ड, 2. पासपोर्ट साइज फोटो, 3. स्व-घोषणा पत्र (Self Declaration Form), और 4. मोबाइल नंबर आवश्यक है।",
+                fileName: "RTPS_Certificate_Checklist_CSC_Amjhar_Sharif.svg",
+                fileType: "image/svg+xml",
+                fileSize: "18 KB",
+                uploadDate: "15 Oct 2026",
+                uploadedBy: "Pro: BHARAT KUMAR",
+                dataUrl: createGenerateNoticeSVG(
+                    "CSC SERVICE CENTRE, AMJHAR SHARIF",
+                    "जाति / आवासीय / आय प्रमाण पत्र सूचना",
+                    [
+                        "1. आवेदक का आधार कार्ड (Aadhaar Card)",
+                        "2. एक पासपोर्ट साइज फोटो (Passport Photo)",
+                        "3. हस्ताक्षर किया हुआ स्व-घोषणा पत्र",
+                        "4. चालू मोबाइल नंबर (OTP के लिए)",
+                        "संपर्क: प्रो० भरत कुमार (मो० 9546662104)"
+                    ]
+                )
+            },
+            {
+                id: "sample-doc-2",
+                title: "PM Kisan Samman Nidhi e-KYC & NPCI Bank Seeding Notice",
+                category: "Scheme Info",
+                description: "पीएम किसान सम्मान निधि योजना की अगली किस्त प्राप्त करने के लिए अपना ई-केवाईसी (e-KYC) और बैंक खाते में आधार सीडिंग (DBT) अवश्य करा लें। हमारे केंद्र पर बायोमेट्रिक से तुरंत केवाईसी किया जाता है।",
+                fileName: "PM_Kisan_eKYC_Notice.svg",
+                fileType: "image/svg+xml",
+                fileSize: "21 KB",
+                uploadDate: "16 Oct 2026",
+                uploadedBy: "Pro: BHARAT KUMAR",
+                dataUrl: createGenerateNoticeSVG(
+                    "पीएम किसान ई-केवाईसी (PM KISAN सूचना)",
+                    "अगली किस्त के लिए आवश्यक सूचना",
+                    [
+                        "• फिंगरप्रिंट द्वारा तुरंत PM Kisan e-KYC करवाएं",
+                        "• भूमि सत्यापन (Land Seeding) की स्थिति जांचें",
+                        "• आधार कार्ड एवं रजिस्टर्ड मोबाइल साथ लाएं",
+                        "• आयुष्मान भारत कार्ड भी तुरंत बनाया जाता है",
+                        "CSC अमझर शरीफ, हसपुरा • मो० 9546662104"
+                    ]
+                )
+            },
+            {
+                id: "sample-doc-3",
+                title: "स्व-घोषणा पत्र फॉर्म (Self-Declaration Form for Revenue Certificates)",
+                category: "Application Form",
+                description: "बिहार सरकार के अंतर्गत जाति, आय एवं निवास प्रमाण पत्र के ऑनलाइन आवेदन के साथ संलग्न करने हेतु आवेदक का स्व-घोषणा पत्र प्रारूप। इसे डाउनलोड या प्रिंट कर सकते हैं।",
+                fileName: "Self_Declaration_Form_Bihar_RTPS.svg",
+                fileType: "image/svg+xml",
+                fileSize: "24 KB",
+                uploadDate: "18 Oct 2026",
+                uploadedBy: "Pro: BHARAT KUMAR",
+                dataUrl: createGenerateNoticeSVG(
+                    "स्व-घोषणा पत्र (SELF DECLARATION FORM)",
+                    "राजस्व एवं भूमि सुधार विभाग (बिहार सरकार)",
+                    [
+                        "मैं ............................ पुत्र/पुत्री श्री ............................",
+                        "ग्राम: अमझर शरीफ, प्रखंड: हसपुरा, जिला: औरंगाबाद",
+                        "घोषित करता/करती हूँ कि मेरे द्वारा दी गई सभी",
+                        "जानकारी सत्य है।",
+                        "आवेदक का हस्ताक्षर: ________________________"
+                    ]
+                )
+            }
+        ];
+
+        // Helper function to generate clean SVG document previews for default items
+        function createGenerateNoticeSVG(headerTitle, subHeader, lines) {
+            const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="550" viewBox="0 0 800 550">
+                <rect width="100%" height="100%" fill="#ffffff"/>
+                <rect x="20" y="20" width="760" height="510" rx="16" fill="#f8fafc" stroke="#0f296b" stroke-width="4"/>
+                <rect x="20" y="20" width="760" height="95" rx="12" fill="#0f296b"/>
+                <text x="400" y="62" font-family="sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">${headerTitle}</text>
+                <text x="400" y="95" font-family="sans-serif" font-size="16" font-weight="bold" fill="#fb923c" text-anchor="middle">AMJHAR SHARIF, HASPURA • PRO: BHARAT KUMAR (9546662104)</text>
+                <text x="400" y="165" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1e3a8a" text-anchor="middle" text-decoration="underline">${subHeader}</text>
+                <g font-family="sans-serif" font-size="19" fill="#1e293b" font-weight="600">
+                    <text x="80" y="230">${lines[0] || ''}</text>
+                    <text x="80" y="280">${lines[1] || ''}</text>
+                    <text x="80" y="330">${lines[2] || ''}</text>
+                    <text x="80" y="380">${lines[3] || ''}</text>
+                    <text x="80" y="445" fill="#ea580c" font-weight="bold">${lines[4] || ''}</text>
+                </g>
+                <rect x="20" y="495" width="760" height="35" fill="#f97316"/>
+                <text x="400" y="518" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">DIGITAL SEVA KENDRA - PUBLIC INFORMATION PORTAL</text>
+            </svg>`;
+            return "data:image/svg+xml;utf8," + encodeURIComponent(svgContent);
+        }
+
+        // ============================================================================
+        // INITIALIZATION & INDEXED-DB STORAGE
+        // ============================================================================
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            initDatabase();
+        });
+
+        function initDatabase() {
+            if (!window.indexedDB) {
+                documentsList = [...DEFAULT_DOCUMENTS];
+                renderDocuments();
+                return;
+            }
+
+            const request = indexedDB.open(DB_NAME, 1);
+
+            request.onupgradeneeded = function(event) {
+                const db = event.target.result;
+                if (!db.objectStoreNames.contains(STORE_NAME)) {
+                    db.createObjectStore(STORE_NAME, { keyPath: "id" });
+                }
+            };
+
+            request.onsuccess = function(event) {
+                dbInstance = event.target.result;
+                loadDocumentsFromDB();
+            };
+
+            request.onerror = function() {
+                documentsList = [...DEFAULT_DOCUMENTS];
+                renderDocuments();
+            };
+        }
+
+        function loadDocumentsFromDB() {
+            if (!dbInstance) return;
+            const transaction = dbInstance.transaction([STORE_NAME], "readonly");
+            const store = transaction.objectStore(STORE_NAME);
+            const getAllRequest = store.getAll();
+
+            getAllRequest.onsuccess = function(event) {
+                const storedDocs = event.target.result || [];
+                if (storedDocs.length === 0) {
+                    // Seed default documents on first visit
+                    seedDefaultDocuments();
+                } else {
+                    // Sort newest first
+                    documentsList = storedDocs.reverse();
+                    renderDocuments();
+                }
+            };
+        }
+
+        function seedDefaultDocuments() {
+            if (!dbInstance) {
+                documentsList = [...DEFAULT_DOCUMENTS];
+                renderDocuments();
+                return;
+            }
+            const transaction = dbInstance.transaction([STORE_NAME], "readwrite");
+            const store = transaction.objectStore(STORE_NAME);
+            DEFAULT_DOCUMENTS.forEach(doc => store.put(doc));
+            transaction.oncomplete = () => {
+                documentsList = [...DEFAULT_DOCUMENTS];
+                renderDocuments();
+            };
+        }
+
+        function saveDocumentToDB(newDoc, callback) {
+            if (!dbInstance) {
+                documentsList.unshift(newDoc);
+                renderDocuments();
+                if (callback) callback();
+                return;
+            }
+            const transaction = dbInstance.transaction([STORE_NAME], "readwrite");
+            const store = transaction.objectStore(STORE_NAME);
+            store.put(newDoc);
+            transaction.oncomplete = () => {
+                documentsList.unshift(newDoc);
+                renderDocuments();
+                if (callback) callback();
+            };
+        }
+
+        function deleteDocumentFromDB(docId) {
+            if (!dbInstance) {
+                documentsList = documentsList.filter(d => d.id !== docId);
+                renderDocuments();
+                return;
+            }
+            const transaction = dbInstance.transaction([STORE_NAME], "readwrite");
+            const store = transaction.objectStore(STORE_NAME);
+            store.delete(docId);
+            transaction.oncomplete = () => {
+                documentsList = documentsList.filter(d => d.id !== docId);
+                renderDocuments();
+                showToast("Document deleted from portal.", "info");
+            };
+        }
+
+        // ============================================================================
+        // RENDER PUBLIC DOCUMENTS (NO PASSWORD NEEDED TO VIEW/DOWNLOAD)
+        // ============================================================================
+        function setCategoryFilter(category) {
+            currentCategoryFilter = category;
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-cat') === category) {
+                    btn.className = "cat-btn bg-cscBlue text-white text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition shadow-sm";
+                } else {
+                    btn.className = "cat-btn bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold px-3.5 py-2 rounded-xl whitespace-nowrap transition";
+                }
+            });
+            renderDocuments();
+        }
+
+        function renderDocuments() {
+            updateAdminStats();
+            const grid = document.getElementById('documentsGrid');
+            const emptyState = document.getElementById('emptyDocsState');
+            const searchQuery = (document.getElementById('searchInput').value || "").trim().toLowerCase();
+
+            const filtered = documentsList.filter(doc => {
+                const matchesCategory = currentCategoryFilter === "ALL" || doc.category === currentCategoryFilter;
+                const matchesSearch = !searchQuery ||
+                    doc.title.toLowerCase().includes(searchQuery) ||
+                    (doc.description && doc.description.toLowerCase().includes(searchQuery)) ||
+                    doc.category.toLowerCase().includes(searchQuery);
+                return matchesCategory && matchesSearch;
+            });
+
+            grid.innerHTML = "";
+
+            if (filtered.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            }
+            emptyState.classList.add('hidden');
+
+            filtered.forEach(doc => {
+                const isImage = doc.fileType && doc.fileType.startsWith("image/");
+                const isPDF = doc.fileType === "application/pdf" || (doc.fileName && doc.fileName.toLowerCase().endsWith(".pdf"));
+
+                let badgeColor = "bg-blue-100 text-cscBlue border-blue-200";
+                if (doc.category === "Public Notice") badgeColor = "bg-amber-100 text-amber-800 border-amber-300";
+                if (doc.category === "Application Form") badgeColor = "bg-purple-100 text-purple-800 border-purple-300";
+                if (doc.category === "Certificate & ID") badgeColor = "bg-emerald-100 text-emerald-800 border-emerald-300";
+
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col overflow-hidden group";
+
+                // Thumbnail / Preview Header
+                let thumbnailHTML = '';
+                if (isImage && doc.dataUrl) {
+                    thumbnailHTML = `
+                        <div onclick="openPreviewModal('${doc.id}')" class="h-44 bg-slate-100 overflow-hidden relative cursor-pointer border-b border-slate-100">
+                            <img src="${doc.dataUrl}" alt="${escapeHtml(doc.title)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition flex items-center justify-center">
+                                <span class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow transition">
+                                    <i class="fa-solid fa-expand mr-1"></i> Click to View
+                                </span>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    const iconClass = isPDF ? "fa-solid fa-file-pdf text-red-500" : "fa-solid fa-file-lines text-cscBlue";
+                    thumbnailHTML = `
+                        <div onclick="openPreviewModal('${doc.id}')" class="h-44 bg-gradient-to-br from-slate-50 to-blue-50/60 flex flex-col items-center justify-center p-4 cursor-pointer border-b border-slate-100 relative group">
+                            <div class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center text-3xl mb-2 group-hover:scale-110 transition">
+                                <i class="${iconClass}"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-600 truncate max-w-[85%]">${escapeHtml(doc.fileName || 'Document File')}</span>
+                            <span class="text-[11px] text-cscSaffron font-semibold mt-1">Click to Preview Document</span>
+                        </div>
+                    `;
+                }
+
+                // Owner Delete Button (Visible only when Owner is logged in)
+                const deleteBtnHTML = isOwnerAuthenticated ? `
+                    <button onclick="promptDeleteDocument('${doc.id}')" class="text-xs bg-red-50 hover:bg-red-600 text-red-600 hover:text-white font-bold px-3 py-2 rounded-xl border border-red-200 transition" title="Delete Document">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                ` : '';
+
+                card.innerHTML = `
+                    ${thumbnailHTML}
+                    <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full border ${badgeColor}">
+                                    ${escapeHtml(doc.category)}
+                                </span>
+                                <span class="text-[11px] text-slate-400 font-medium flex items-center gap-1">
+                                    <i class="fa-regular fa-calendar"></i> ${escapeHtml(doc.uploadDate)}
+                                </span>
+                            </div>
+                            <h3 onclick="openPreviewModal('${doc.id}')" class="font-extrabold text-base text-slate-900 group-hover:text-cscBlue cursor-pointer line-clamp-2 leading-snug">
+                                ${escapeHtml(doc.title)}
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
+                                ${escapeHtml(doc.description || 'इस दस्तावेज़ को देखने या डाउनलोड करने के लिए नीचे दिए गए बटन पर क्लिक करें।')}
+                            </p>
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 space-y-3">
+                            <div class="flex items-center justify-between text-[11px] text-slate-500">
+                                <span><i class="fa-solid fa-user-check text-cscSaffron mr-1"></i> ${escapeHtml(doc.uploadedBy || 'Pro: BHARAT KUMAR')}</span>
+                                <span class="font-semibold">${escapeHtml(doc.fileSize || '')}</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <button onclick="openPreviewModal('${doc.id}')" class="flex-1 bg-cscBlue hover:bg-blue-800 text-white text-xs font-bold py-2.5 px-3 rounded-xl shadow-sm transition flex items-center justify-center gap-1.5">
+                                    <i class="fa-regular fa-eye"></i> View / देखें
+                                </button>
+                                <a href="${doc.dataUrl}" download="${escapeHtml(doc.fileName || 'CSC_Document')}" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl shadow-sm transition flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                                ${deleteBtnHTML}
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // ============================================================================
+        // OWNER PASSWORD LOGIN & UPLOAD LOGIC
+        // ============================================================================
+        function updateAdminStats() {
+            const total = documentsList.length;
+            const images = documentsList.filter(d => (d.fileType || '').startsWith('image/')).length;
+            const files = total - images;
+            const bytes = documentsList.reduce((sum, d) => {
+                const n = parseInt(String(d.fileSize || '0').replace(/[^0-9.]/g, '')) || 0;
+                const unit = String(d.fileSize || '').toUpperCase();
+                return sum + (unit.includes('MB') ? n * 1024 * 1024 : unit.includes('KB') ? n * 1024 : n);
+            }, 0);
+            const el = id => document.getElementById(id);
+            if (el('statTotalDocs')) el('statTotalDocs').textContent = total;
+            if (el('statImages')) el('statImages').textContent = images;
+            if (el('statFiles')) el('statFiles').textContent = files;
+            if (el('statStorage')) el('statStorage').textContent = (bytes / (1024*1024)).toFixed(2) + ' MB';
+        }
+
+        function exportPortalBackup() {
+            if (!isOwnerAuthenticated) return showToast('Please unlock the owner panel first.', 'error');
+            const payload = { version: 1, exportedAt: new Date().toISOString(), portal: 'CSC Service Centre Amjhar Sharif', documents: documentsList };
+            const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a'); a.href = url; a.download = 'CSC_Portal_Backup_' + new Date().toISOString().slice(0,10) + '.json'; a.click();
+            URL.revokeObjectURL(url);
+            showToast('Backup exported successfully.', 'success');
+        }
+
+        function importPortalBackup(input) {
+            if (!isOwnerAuthenticated) { input.value=''; return showToast('Please unlock the owner panel first.', 'error'); }
+            const file = input.files && input.files[0]; if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                try {
+                    const payload = JSON.parse(reader.result);
+                    if (!payload || !Array.isArray(payload.documents)) throw new Error('Invalid backup');
+                    const tx = dbInstance.transaction([STORE_NAME], 'readwrite');
+                    const store = tx.objectStore(STORE_NAME);
+                    payload.documents.forEach(doc => store.put(doc));
+                    tx.oncomplete = () => { loadDocumentsFromDB(); showToast('Backup restored successfully.', 'success'); };
+                    tx.onerror = () => showToast('Could not restore backup.', 'error');
+                } catch (e) { showToast('Invalid backup file.', 'error'); }
+                input.value='';
+            };
+            reader.readAsText(file);
+        }
+
+        function handleOwnerAction() {
+            if (isOwnerAuthenticated) {
+                const adminSection = document.getElementById('ownerAdminSection');
+                adminSection.classList.remove('hidden');
+                adminSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                const modal = document.getElementById('loginModal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.getElementById('ownerPasswordInput').value = "";
+                document.getElementById('loginErrorMsg').classList.add('hidden');
+                setTimeout(() => document.getElementById('ownerPasswordInput').focus(), 100);
+            }
+        }
+
+        function closeLoginModal() {
+            const modal = document.getElementById('loginModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function togglePasswordVisibility() {
+            const input = document.getElementById('ownerPasswordInput');
+            const icon = document.getElementById('eyeIcon');
+            if (input.type === "password") {
+                input.type = "text";
+                icon.className = "fa-regular fa-eye-slash";
+            } else {
+                input.type = "password";
+                icon.className = "fa-regular fa-eye";
+            }
+        }
+
+        async function sha256Hex(value) {
+            const data = new TextEncoder().encode(value);
+            const digest = await crypto.subtle.digest("SHA-256", data);
+            return Array.from(new Uint8Array(digest))
+                .map(b => b.toString(16).padStart(2, "0")).join("");
+        }
+
+        function getLoginLockRemaining() {
+            return Math.max(0, lockoutUntil - Date.now());
+        }
+
+        async function verifyOwnerPassword(event) {
+            event.preventDefault();
+
+            const input = document.getElementById('ownerPasswordInput');
+            const errorMsg = document.getElementById('loginErrorMsg');
+            const submitBtn = event.submitter || event.target.querySelector('button[type="submit"]');
+            const remaining = getLoginLockRemaining();
+
+            if (remaining > 0) {
+                const mins = Math.ceil(remaining / 60000);
+                errorMsg.innerHTML = `<i class="fa-solid fa-shield-halved"></i> Too many failed attempts. Try again in ${mins} minute${mins === 1 ? "" : "s"}.`;
+                errorMsg.classList.remove('hidden');
+                return;
+            }
+
+            const enteredPassword = input.value;
+            if (!enteredPassword) return;
+
+            if (submitBtn) submitBtn.disabled = true;
+            try {
+                const enteredHash = await sha256Hex(enteredPassword);
+
+                if (enteredHash === OWNER_PASSWORD_HASH) {
+                    isOwnerAuthenticated = true;
+                    loginAttempts = 0;
+                    lockoutUntil = 0;
+                    sessionStorage.removeItem("csc_login_attempts");
+                    sessionStorage.removeItem("csc_lockout_until");
+
+                    closeLoginModal();
+
+                    const adminSection = document.getElementById('ownerAdminSection');
+                    adminSection.classList.remove('hidden');
+
+                    document.getElementById('ownerBtnIcon').className = "fa-solid fa-cloud-arrow-up";
+                    document.getElementById('ownerBtnText').textContent = "Upload Panel (Active)";
+
+                    renderDocuments();
+                    showToast("Welcome Bharat Kumar! Owner Upload Panel unlocked.", "success");
+                    adminSection.scrollIntoView({ behavior: 'smooth' });
+                    input.value = "";
+                } else {
+                    loginAttempts++;
+                    sessionStorage.setItem("csc_login_attempts", String(loginAttempts));
+
+                    if (loginAttempts >= MAX_LOGIN_ATTEMPTS) {
+                        lockoutUntil = Date.now() + LOCKOUT_MS;
+                        sessionStorage.setItem("csc_lockout_until", String(lockoutUntil));
+                        errorMsg.innerHTML = `<i class="fa-solid fa-shield-halved"></i> Too many failed attempts. Login is locked for 15 minutes.`;
+                    } else {
+                        const left = MAX_LOGIN_ATTEMPTS - loginAttempts;
+                        errorMsg.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Incorrect password. ${left} attempt${left === 1 ? "" : "s"} remaining.`;
+                    }
+                    errorMsg.classList.remove('hidden');
+                    input.value = "";
+                    input.focus();
+                }
+            } catch (err) {
+                errorMsg.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Secure authentication is unavailable in this browser.`;
+                errorMsg.classList.remove('hidden');
+            } finally {
+                if (submitBtn) submitBtn.disabled = false;
+            }
+        }
+
+        function logoutOwner() {
+            isOwnerAuthenticated = false;
+            document.getElementById('ownerAdminSection').classList.add('hidden');
+            document.getElementById('ownerBtnIcon').className = "fa-solid fa-lock";
+            document.getElementById('ownerBtnText').textContent = "Owner Upload";
+            renderDocuments();
+            showToast("Owner Panel Locked Successfully.", "info");
+        }
+
+        function updateSelectedFileName(input) {
+            const label = document.getElementById('selectedFileName');
+            if (input.files && input.files[0]) {
+                const file = input.files[0];
+                const sizeKB = (file.size / 1024).toFixed(1);
+                label.innerHTML = `<span class="text-cscBlue font-extrabold"><i class="fa-solid fa-file-circle-check text-green-600 mr-1"></i> ${escapeHtml(file.name)}</span> (${sizeKB} KB)`;
+            } else {
+                label.textContent = "Click to browse & select document";
+            }
+        }
+
+        function handleDocumentUpload(event) {
+            event.preventDefault();
+            if (!isOwnerAuthenticated) {
+                showToast("Unauthorized! Please log in with Owner Password.", "error");
+                return;
+            }
+
+            const titleInput = document.getElementById('docTitle');
+            const categoryInput = document.getElementById('docCategory');
+            const descInput = document.getElementById('docDesc');
+            const fileInput = document.getElementById('docFile');
+            const submitBtn = document.getElementById('uploadSubmitBtn');
+
+            if (!fileInput.files || fileInput.files.length === 0) {
+                showToast("Please select a document or image file to upload.", "error");
+                return;
+            }
+
+            const file = fileInput.files[0];
+            if (file.size > 15 * 1024 * 1024) {
+                showToast("File size exceeds 15MB limit. Please choose a smaller file.", "error");
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Uploading...`;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const fileSizeFormatted = file.size > 1024 * 1024
+                    ? (file.size / (1024 * 1024)).toFixed(2) + " MB"
+                    : Math.max(1, Math.round(file.size / 1024)) + " KB";
+
+                const today = new Date().toLocaleDateString('en-GB', {
+                    day: '2-digit', month: 'short', year: 'numeric'
+                });
+
+                const newDoc = {
+                    id: "doc-" + Date.now(),
+                    title: titleInput.value.trim(),
+                    category: categoryInput.value,
+                    description: descInput.value.trim(),
+                    fileName: file.name,
+                    fileType: file.type || "application/octet-stream",
+                    fileSize: fileSizeFormatted,
+                    uploadDate: today,
+                    uploadedBy: "Pro: BHARAT KUMAR",
+                    dataUrl: e.target.result
+                };
+
+                saveDocumentToDB(newDoc, () => {
+                    // Reset Form
+                    document.getElementById('documentUploadForm').reset();
+                    document.getElementById('selectedFileName').textContent = "Click to browse & select document";
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = `<i class="fa-solid fa-upload"></i> <span>Publish Document Now</span>`;
+
+                    showToast("Document uploaded! It is now visible to all viewers.", "success");
+                    document.getElementById('documents-section').scrollIntoView({ behavior: 'smooth' });
+                });
+            };
+
+            reader.onerror = function() {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<i class="fa-solid fa-upload"></i> <span>Publish Document Now</span>`;
+                showToast("Failed to read file. Please try again.", "error");
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        // ============================================================================
+        // DOCUMENT PREVIEW & DELETE MODALS
+        // ============================================================================
+        function openPreviewModal(docId) {
+            const doc = documentsList.find(d => d.id === docId);
+            if (!doc) return;
+
+            document.getElementById('previewModalCategory').textContent = doc.category;
+            document.getElementById('previewModalTitle').textContent = doc.title;
+
+            const downloadBtn = document.getElementById('previewDownloadBtn');
+            downloadBtn.href = doc.dataUrl;
+            downloadBtn.setAttribute('download', doc.fileName || 'CSC_Document');
+
+            const body = document.getElementById('previewModalBody');
+            const isImage = doc.fileType && doc.fileType.startsWith("image/");
+            const isPDF = doc.fileType === "application/pdf" || (doc.fileName && doc.fileName.toLowerCase().endsWith(".pdf"));
+
+            let previewVisual = '';
+            if (isImage) {
+                previewVisual = `
+                    <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-inner flex justify-center">
+                        <img src="${doc.dataUrl}" alt="${escapeHtml(doc.title)}" class="max-h-[60vh] w-auto object-contain rounded-lg">
+                    </div>
+                `;
+            } else if (isPDF) {
+                previewVisual = `
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden h-[60vh]">
+                        <iframe src="${doc.dataUrl}" class="w-full h-full border-0" title="PDF Preview"></iframe>
+                    </div>
+                `;
+            } else {
+                previewVisual = `
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 text-center space-y-3">
+                        <div class="w-16 h-16 rounded-2xl bg-blue-50 text-cscBlue flex items-center justify-center mx-auto text-3xl">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-800">${escapeHtml(doc.fileName)}</h4>
+                        <p class="text-xs text-slate-500">Click the "Download" button above to open this file on your device.</p>
+                    </div>
+                `;
+            }
+
+            body.innerHTML = `
+                <div class="bg-blue-50/80 border border-blue-200 rounded-2xl p-4 text-xs sm:text-sm text-slate-700 space-y-1.5">
+                    <div class="font-bold text-cscBlue flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info"></i> Document Details & Instructions:
+                    </div>
+                    <p class="leading-relaxed">${escapeHtml(doc.description || 'No additional description provided.')}</p>
+                    <div class="pt-2 flex flex-wrap gap-4 text-xs text-slate-500 font-semibold">
+                        <span><i class="fa-regular fa-file mr-1"></i> File: ${escapeHtml(doc.fileName)} (${escapeHtml(doc.fileSize)})</span>
+                        <span><i class="fa-regular fa-calendar mr-1"></i> Uploaded: ${escapeHtml(doc.uploadDate)}</span>
+                    </div>
+                </div>
+                ${previewVisual}
+            `;
+
+            const modal = document.getElementById('previewModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closePreviewModal() {
+            const modal = document.getElementById('previewModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.getElementById('previewModalBody').innerHTML = '';
+        }
+
+        function promptDeleteDocument(docId) {
+            if (!isOwnerAuthenticated) return;
+            pendingDeleteId = docId;
+            const modal = document.getElementById('deleteConfirmModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            document.getElementById('confirmDeleteBtn').onclick = function() {
+                if (pendingDeleteId) {
+                    deleteDocumentFromDB(pendingDeleteId);
+                    pendingDeleteId = null;
+                }
+                closeDeleteModal();
+            };
+        }
+
+        function closeDeleteModal() {
+            const modal = document.getElementById('deleteConfirmModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // ============================================================================
+        // UTILITY FUNCTIONS (CLIPBOARD, TOAST, ESCAPE HTML)
+        // ============================================================================
+        function copyPhoneNumber(phone) {
+            const tempInput = document.createElement("textarea");
+            tempInput.value = phone;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            showToast("Mobile Number (9546662104) copied!", "success");
+        }
+
+        function showToast(message, type = "success") {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+
+            let bgClass = "bg-slate-900 border-l-4 border-cscSaffron";
+            let iconClass = "fa-solid fa-circle-check text-green-400";
+
+            if (type === "error") {
+                bgClass = "bg-red-900 border-l-4 border-red-400";
+                iconClass = "fa-solid fa-circle-exclamation text-red-300";
+            } else if (type === "info") {
+                bgClass = "bg-cscBlue border-l-4 border-amber-400";
+                iconClass = "fa-solid fa-circle-info text-amber-300";
+            }
+
+            toast.className = `${bgClass} text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 text-xs font-bold pointer-events-auto transition-all duration-300`;
+            toast.innerHTML = `
+                <i class="${iconClass} text-base"></i>
+                <span>${escapeHtml(message)}</span>
+            `;
+
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        function escapeHtml(str) {
+            if (!str) return "";
+            return String(str)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+    </script>
+
+    <!-- Back to Top -->
+    <button id="backToTop" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="back-top fixed bottom-24 right-5 sm:right-7 w-11 h-11 rounded-full bg-slate-900 text-white shadow-xl hover:bg-cscBlue transition z-50 flex items-center justify-center" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp Quick Contact -->
+    <a href="https://wa.me/919546662104?text=Hello%20Mr.%20Bharat%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20CSC%20services.%20Could%20you%20please%20provide%20me%20with%20the%20details%3F" target="_blank" rel="noopener noreferrer"
+       class="floating-whatsapp fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center text-2xl border-4 border-white transition"
+       title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <script>
+        async function sharePortal(){
+            const shareData = {
+                title: 'CSC Service Centre — Amjhar Sharif',
+                text: 'CSC Service Centre, Amjhar Sharif, Haspura — Digital Seva & Public Documents',
+                url: window.location.href
+            };
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else {
+                    await navigator.clipboard.writeText(window.location.href);
+                    showToast('Portal link copied. Share it on WhatsApp!', 'success');
+                }
+            } catch(e) {}
+        }
+
+        function toggleMobileMenu(){
+            const menu=document.getElementById('mobileMenu');
+            const btn=document.getElementById('mobileMenuBtn');
+            if(!menu||!btn) return;
+            const open=menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded',String(open));
+            btn.innerHTML=open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        }
+        function closeMobileMenu(){
+            const menu=document.getElementById('mobileMenu');
+            const btn=document.getElementById('mobileMenuBtn');
+            if(menu) menu.classList.remove('open');
+            if(btn){ btn.setAttribute('aria-expanded','false'); btn.innerHTML='<i class="fa-solid fa-bars"></i>'; }
+        }
+        document.addEventListener('DOMContentLoaded',()=>{
+            const back=document.getElementById('backToTop');
+            const reveals=document.querySelectorAll('.reveal');
+            const observer=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+            reveals.forEach(el=>observer.observe(el));
+            window.addEventListener('scroll',()=>{
+                if(back) back.classList.toggle('show',window.scrollY>500);
+            },{passive:true});
+        });
+    </script>
+</body>
+</html>
